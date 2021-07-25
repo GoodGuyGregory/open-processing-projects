@@ -30,7 +30,7 @@ function draw() {
 
         //  TODO:
         //  random size and random color:
-        noStroke();
+        // noStroke();
         circle(point.pos.x, point.pos.y, 10);
     }
 }

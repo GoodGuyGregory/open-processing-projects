@@ -19,7 +19,8 @@ function draw() {
     background(50);
     // add time to the equation:
     var time = millis() / 1000;
-    for (var i = 0; i < TOTAL; i++) {
+    let i = 0;
+    while (i < TOTAL) {
         var point = points[i];
 
         //  trick 2:
@@ -36,6 +37,6 @@ function draw() {
         noStroke();
         fill(point.color);
         ellipse(point.pos.x, point.pos.y, point.size);
-
+        i++;
     }
 }
